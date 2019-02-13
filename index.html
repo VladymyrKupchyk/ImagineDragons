@@ -101,12 +101,7 @@
   .nav-tabs li a {
     color: #777;
   }
-  #googleMap {
-    width: 100%;
-    height: 400px;
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-  }  
+
   .navbar {
     font-family: Montserrat, sans-serif;
     margin-bottom: 0;
@@ -248,7 +243,7 @@
   <h1 style="color: black"><p><em><b>"Музыка и наши фанаты — это больше чем жизнь"</b></em></p></h1>
   <b><p>Imagine Dragons (дословно «Вообрази драконов») — американская инди-группа, образованная в Лас-Вегасе в 2008 году. Стали известны после выпуска дебютного студийного альбома Night Visions в сентябре 2012 года. Американский журнал Billboard назвал их самыми яркими новыми звёздами 2013 года и самой большой группой 2017 года, а журнал Rolling Stone назвал их сингл «Radioactive» самым большим рок-хитом года</p></b>
   <br>
-  <div class="container" >
+  <div class="container"  id="band">
     <div class="row">
       <div class="col-md-3">
         <hr>
@@ -261,7 +256,7 @@
       </div>
     </div>
   </div>
-  <div class="row"id="band">
+  <div class="row" >
     <div class="col-sm-3">
       <p class="text-center text-uppercase" style="color: black" ><strong>Дэн Рейнольдс</strong></p><br>
       <a href="#demo" data-toggle="collapse">
@@ -328,23 +323,23 @@
       </div>
     </div>
   </div>
-  <div class="container" style="float: center">
+  <div class="container.row" style="float: center">
       <p class="text-center">Ты должен быть хладнокровным,<br>Чтобы добиться успеха в этом мире!</p>
     <div class="row text-center">
       <div class="col-md-4 ">
-       <iframe width="350" height="200" src="https://www.youtube.com/embed/EIh9U-iUXEw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+       <iframe width="300" height="200" src="https://www.youtube.com/embed/EIh9U-iUXEw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
       <div class="col-md-4">
-       <iframe width="350" height="200" src="https://www.youtube.com/embed/EIh9U-iUXEw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+       <iframe width="300" height="200" src="https://www.youtube.com/embed/EIh9U-iUXEw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div class="col-md-4">
-       <iframe width="350" height="200" src="https://www.youtube.com/embed/EIh9U-iUXEw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>       
+       <iframe width="300" height="200" src="https://www.youtube.com/embed/EIh9U-iUXEw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>        
       </div>
  </div>
-    
+ 
   <div class="container">
-    <div class="row my-5">
+    
       <div class="col-md-4">
         <hr>
       </div>
@@ -356,11 +351,17 @@
       </div>
     </div>
   </div>
-  <div class="container text-center">
-    <div class="row">
- <div class="col-md-6">
-       <h3><strong> Origins</strong></h3>
-       <audio src="Music\Origins\Bad Liar.mp3" controls></audio>
+  <div class="container text-center mb-5">
+   <div class="row">
+     <div class="col-md-6">
+ 
+      <a href="#demo5" data-toggle="collapse">
+        <img src="images/25.jpg" class="img-circle" alt="Origins" width="255" height="255">
+      </a>
+      <div id="demo5" class="collapse">
+         <audio controls>
+          <source src="Music\Origins\Bad Liar.mp3">
+         </audio>
          <p class="text-center">Bad Liar</p>
        <audio src="Music\Origins\Birds.mp3" controls></audio>
          <p class="text-center">Birds</p>
@@ -390,9 +391,15 @@
          <p class="text-center">West Coast</p>
        <audio src="Music\Origins\Zero.mp3" controls></audio>
          <p class="text-center">Zero</p>
- </div>
- <div class="col-md-6">
-       <h3><strong> Evlove</strong></h3>
+       </div>
+        <p class="text-center text-uppercase" style="color: black" ><strong>Origins</strong></p><br>
+     </div>
+<div class="col-md-6 ">
+  
+      <a href="#demo1" data-toggle="collapse">
+        <img src="images/24.jpg" class="img-circle " alt="Дэн Рейнольдс" width="255" height="255">
+      </a>
+      <div id="demo1" class="collapse">
        <audio src="Music\Evolve\I Don't Know Why.mp3" controls></audio>
          <p class="text-center">I Don't Know Why</p>
        <audio src="Music\Evolve\Thunder.mp3" controls></audio>
@@ -423,9 +430,20 @@
          <p class="text-center">Walking The Wire</p>
        <audio src="Music\Evolve\Yesterday.mp3" controls></audio>
          <p class="text-center">Yesterday</p>
- </div>
+    </div>
+    <p class="text-center text-uppercase" style="color: black" ><strong>Evolve</strong></p><br>
+</div>
+</div>
+</div>
+  
+  <div class="container text-center">
+   <div class="row">
  <div class="col-md-6">
-       <h3><strong> Smoke + Mirrors</strong></h3>
+   
+      <a href="#demo2" data-toggle="collapse">
+        <img src="images/23.jpg" class="img-circle" alt="Дэн Рейнольдс" width="255" height="255">
+      </a>
+<div id="demo2" class="collapse">
        <audio src="Music\Smoke + Mirrors\Battle Cry.m4a" controls></audio>
          <p class="text-center">Battle Cry</p>
        <audio src="Music\Smoke + Mirrors\Dream.m4a" controls></audio>
@@ -464,9 +482,16 @@
          <p class="text-center">Trouble</p>
        <audio src="Music\Smoke + Mirrors\Warriors.m4a" controls></audio>
          <p class="text-center">Warriors</p>
- </div>
+           
+   </div>
+   <p class="text-center text-uppercase " style="color: black" ><strong>Smoke + Mirrors</strong></p><br>
+</div>
   <div class="col-md-6">
-       <h3><strong>Night Visions</strong></h3>    
+      
+      <a href="#demo3" data-toggle="collapse">
+        <img src="images/22.jpg" class="img-circle " alt="Дэн Рейнольдс" width="255" height="255">
+      </a>
+ <div id="demo3" class="collapse">   
        <audio src="Music\Night Visions\Radioactive.m4a" controls></audio>
          <p class="text-center">Radioactive</p>
        <audio src="Music\Night Visions\On Top of the World.m4a" controls></audio>
@@ -509,8 +534,12 @@
          <p class="text-center">Underdog</p>
        <audio src="Music\Night Visions\Working Man.m4a" controls></audio>
          <p class="text-center">Working Man</p>
-      
+
+     </div>
+      <p class="text-center text-uppercase" style="color: black" ><strong>Night Visions</strong></p>
  </div>
+</div>
+</div>
 <!-- Container (Contact Section) -->
 <div id="contact" class="container">
     <div class="row my-5">
@@ -558,8 +587,7 @@
 </main>
 <!-- Footer -->
 <footer class="text-center">
-
-<h1><strong><b>IMAGINE DRAGONS</b></strong></h1>
+<h1>IMAGINE DRAGONS</h1>
 </footer>
 
 
